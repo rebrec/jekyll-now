@@ -1,6 +1,7 @@
 ---
 layout: post
-title: SHA2017 CTF suspectfile1
+title: "SHA2017 CTF suspectfile1"
+categories: CTF
 ---
 
 # Description
