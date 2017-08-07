@@ -28,31 +28,28 @@ We then run the binary to see what seems to happend
 It's clearly visible that this binary do not try to read user input after being launched.
 There must be some commandline parameter processing.
 
-Let's now try to have a look at it withing gdb :
+Let's now try to have a look at it withing gdb : `gdb ./100`
+
+Typing `pdisass main` display the disassembled version of the main function.
+
+We can see that the main is quite long (more than 5000 instructions long)
 
 
-![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-000832.png)
+![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-003447.png)
+
+At the end of this function, we can observe a function named "Sorry". We can guess it is responsible for displaying the "bad boy" message ("Sorry").
+
+We set a breakpoint at this function start address to see the call stack :
+
+`break sorry`
+
+Then we run the program with some parameter :
+`r some_parameter`
+
+The breakpoint is reached as we can see below
+![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-003447.png)
 
 
-
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
-![]({{ site.url }}/images/)
+Not much to say, we are lucky enough to see the flag at $esp+4
 
 
