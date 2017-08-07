@@ -9,7 +9,7 @@ Suspect File1(100) - 63 solves
 
 ## Needed Tools
 - _gdb_ 
-- _peda_ gdb plugin available [here](http://github.com/longld/peda)
+- _peda_ : gdb plugin available [here](http://github.com/longld/peda) (also check the Blackhat 2012 presentation of [PEDA](http://ropshell.com/peda/Linux_Interactive_Exploit_Development_with_GDB_and_PEDA_Slides.pdf))
 
 
 ## Walkthrough
@@ -23,7 +23,7 @@ Next we check what kind of file we are facing with a `file 100`:
 We then run the binary to see what seems to happend
 
 
-![]({{ site.url }}/images/CTF-SHA2016-suspectfile1-20170808-000239.png)
+![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-000556.png)
 
 It's clearly visible that this binary do not try to read user input after being launched.
 There must be some commandline parameter processing.
@@ -31,7 +31,7 @@ There must be some commandline parameter processing.
 Let's now try to have a look at it withing gdb :
 
 
-![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-000239.png)
+![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-000832.png)
 
 
 
