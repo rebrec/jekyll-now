@@ -9,9 +9,11 @@ Suspect File1(100) - 63 solves
 
 # Walkthrough
 
-After getting the challenge archive file available [here](suspectfile1.tgz), we first uncompress it with `tar zxvf suspectfile1.tgz`, which create a new file named _100_.
+After getting the challenge archive file available [here]({{ site.url }}/downloads/suspectfile1.tgz), we first uncompress it with `tar zxvf suspectfile1.tgz`, which create a new file named _100_.
 
-Next we check what kind of file we are facing with a `file 100`
+Next we check what kind of file we are facing with a `file 100`:
+
+![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170807-234724.png)
 
 :!
 
