@@ -6,4 +6,4 @@ permalink: /about/
 
 ### Contact me
 
-[Reach me on Twitter](http://twitter.com/rebrec)
+You can [reach me on Twitter](https://twitter.com/elfrancesco)
