@@ -47,7 +47,7 @@ Then we run the program with some parameter :
 `r some_parameter`
 
 The breakpoint is reached as we can see below
-![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-003447.png)
+![]({{ site.url }}/images/CTF-SHA2017-suspectfile1-20170808-003939.png)
 
 
 Not much to say, we are lucky enough to see the flag at $esp+4
