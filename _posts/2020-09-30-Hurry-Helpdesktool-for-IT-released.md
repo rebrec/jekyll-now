@@ -110,4 +110,5 @@ If you have ideas, troubles using it or any questions about it, feel free to :
 {: #download }
 
 More details can be found on [the project's page](https://github.com/rebrec/hurry/).
-The Latest release is available [here](https://github.com/rebrec/hurry/releases/latest)
+
+**Download The Latest release** from [here](https://github.com/rebrec/hurry/releases/latest).
